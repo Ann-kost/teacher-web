@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4 класс — Копилка идей для педагогов</title>
+<!-- Подключаем общий CSS -->
+<link rel="stylesheet" href="../css/first.css">
+</head>
+<body>
+
+<!-- ХЕДЕР -->
+<header class="header">
+  <div class="container header__container">
+    
+    <!-- Левая часть: Логотип и название -->
+    <a href="#" class="header__logo">
+      <img src="../images/photo_3_2026-11-12_16-34-55.jpg" alt="Копилка идей для педагогов" class="header__logo-img">
+      <span class="header__logo-text">Копилка идей</span>
+    </a>
+
+    <!-- Центральная часть: Навигация -->
+    <nav class="header__nav">
+      <a href="#" class="header__link">Главная</a>
+      <a href="#" class="header__link">О нас</a>
+      <a href="#contacts" class="header__link">Контакты</a>
+      <a href="#" class="header__link">Скачанное</a>
+    </nav>
+
+    <!-- Правая часть: Пустой блок для симметрии -->
+    <div class="header__spacer"></div>
+
+  </div>
+</header>
+
+<!-- ОСНОВНОЙ КОНТЕНТ -->
+<main>
+  <!-- Приветственный блок для 4 класса -->
+  <section class="hero hero--class">
+    <div class="container">
+      <h1 class="hero__title">4 класс</h1>
+      <p class="hero__text">
+        Подводим итоги начальной школы, готовимся к ВПР и переходу в среднее звено. Материалы для выпускников.
+      </p>
+    </div>
+  </section>
+
+  <!-- Выбор предмета -->
+  <section class="subjects">
+    <div class="container">
+      <h2 class="section-title">Выберите предмет</h2>
+      
+      <div class="subjects__grid">
+        
+        <!-- Математика -->
+        <a href="#" class="subject-card" onclick="alert('Переход к материалам по Математике для 4 класса'); return false;">
+          <div class="subject-card__icon">🔢</div>
+          <h3 class="subject-card__title">Математика</h3>
+          <p class="subject-card__sub">Многозначные числа, скорость, дроби</p>
+        </a>
+
+        <!-- Русский язык -->
+        <a href="#" class="subject-card" onclick="alert('Переход к материалам по Русскому языку для 4 класса'); return false;">
+          <div class="subject-card__icon">✍️</div>
+          <h3 class="subject-card__title">Русский язык</h3>
+          <p class="subject-card__sub">Спряжения, наречия, разбор слов</p>
+        </a>
+
+        <!-- Литература -->
+        <a href="#" class="subject-card" onclick="alert('Переход к материалам по Литературе для 4 класса'); return false;">
+          <div class="subject-card__icon">📖</div>
+          <h3 class="subject-card__title">Литература</h3>
+          <p class="subject-card__sub">Летописи, былины, авторские сказки</p>
+        </a>
+
+        <!-- Окружающий мир -->
+        <a href="#" class="subject-card" onclick="alert('Переход к материалам по Окружающему миру для 4 класса'); return false;">
+          <div class="subject-card__icon">🌍</div>
+          <h3 class="subject-card__title">Окружающий мир</h3>
+          <p class="subject-card__sub">История России, природа, организм</p>
+        </a>
+
+        <!-- Другое -->
+        <a href="#" class="subject-card" onclick="alert('Переход к дополнительным материалам для 4 класса'); return false;">
+          <div class="subject-card__icon">🧩</div>
+          <h3 class="subject-card__title">Другое</h3>
+          <p class="subject-card__sub">Технология, ОРКСЭ, проекты</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ПОДВАЛ -->
+<footer class="footer" id="contacts">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h3 class="footer__title">Копилка идей</h3>
+        <p class="footer__text">Помогаем учителям начальной школы готовиться к урокам быстро и качественно.</p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <p class="footer__text">📧 Email: <a href="gontstatyana@internet.ru">gontstatyana@internet.ru</a></p>
+        <p class="footer__text">📞 Телефон: <a href="tel:+78001234567">+7 (978) 266-08-12</a></p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Мы в соцсетях</h3>
+        <div class="socials">
+          <!-- Оставлен только ВК и добавлен MAX -->
+          <a class="socials__link" href="https://vk.ru/club229749227" target="_blank" title="ВКонтакте">ВК</a>
+          <a class="socials__link" href="https://max.ru/kopilka_pedagogam" target="_blank" title="MAX">MAX</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">© 2025 Копилка идей для педагогов. Все права защищены.</div>
+  </div>
+</footer>
+
+</body>
+</html>

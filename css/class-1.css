@@ -1,0 +1,64 @@
+/* ============================================
+   СТИЛИ ДЛЯ СТРАНИЦ КЛАССОВ (class-1.html)
+   ============================================ */
+
+/* Небольшая корректировка отступа для заголовка класса */
+.hero--class {
+  padding-bottom: 40px;
+}
+
+/* Сетка предметов */
+.subjects {
+  padding: 20px 0 100px;
+}
+
+.subjects__grid {
+  display: grid;
+  /* Карточки чуть шире, чтобы помещался текст */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Карточка предмета */
+.subject-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border: 2px solid transparent;
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  text-align: left; /* Текст по левому краю */
+}
+
+.subject-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-5px); /* Приподнимаем карточку при наведении */
+  box-shadow: var(--shadow-lg);
+}
+
+/* Иконка предмета */
+.subject-card__icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+/* Название предмета */
+.subject-card__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+/* Описание предмета */
+.subject-card__sub {
+  font-size: 0.95rem;
+  color: var(--color-gray);
+  line-height: 1.5;
+}
