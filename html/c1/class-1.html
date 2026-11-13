@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>3 класс — Копилка идей для педагогов</title>
-<!-- Подключаем общий CSS -->
+<title>1 класс — Копилка идей для педагогов</title>
 <link rel="stylesheet" href="../css/first.css">
+<link rel="icon" href="../images/photo_3_2026-11-12_16-34-55.jpg" type="image/png"> 
 </head>
 <body>
 
-<!-- ХЕДЕР -->
+<!-- ХЕДЕР (ОСТАЕТСЯ БЕЗ ИЗМЕНЕНИЙ) -->
 <header class="header">
   <div class="container header__container">
     
@@ -28,19 +28,40 @@
     </nav>
 
     <!-- Правая часть: Пустой блок для симметрии -->
-    <div class="header__spacer"></div>
+        <!-- Правая часть: Иконки корзины и профиля -->
+    <div class="header__actions">
+      <a href="#" class="header__icon" title="Корзина">
+        <!-- Иконка корзины (SVG) -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="header__icon-badge">3</span> <!-- Цифра 3 - это количество товаров -->
+      </a>
+      
+      <a href="downloads.html" class="header__icon" title="Профиль">
+        <!-- Иконка профиля (SVG) -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span class="header__icon-badge">1</span> <!-- Уведомление -->
+      </a>
+    </div>
 
   </div>
 </header>
 
 <!-- ОСНОВНОЙ КОНТЕНТ -->
 <main>
-  <!-- Приветственный блок для 3 класса -->
+  <!-- Приветственный блок для 1 класса -->
   <section class="hero hero--class">
     <div class="container">
-      <h1 class="hero__title">3 класс</h1>
+      <!-- Возвращаемся на главную и используем тот же шрифт -->
+      <h1 class="hero__title">1 класс</h1>
       <p class="hero__text">
-        Учимся рассуждать, писать сочинения и решать сложные задачи. Материалы для третьеклассников.
+        Азбука, письмо, счёт и первые открытия. Готовые материалы для самых маленьких учеников.
       </p>
     </div>
   </section>
@@ -50,48 +71,42 @@
     <div class="container">
       <h2 class="section-title">Выберите предмет</h2>
       
+      <!-- Сетка с предметами -->
       <div class="subjects__grid">
         
         <!-- Математика -->
-        <a href="#" class="subject-card" onclick="alert('Переход к материалам по Математике для 3 класса'); return false;">
+        <a href="../html/math-1.html" class="subject-card">
           <div class="subject-card__icon">🔢</div>
           <h3 class="subject-card__title">Математика</h3>
-          <p class="subject-card__sub">Умножение и деление, уравнения, геометрия</p>
+          <p class="subject-card__sub">Счёт до 20, геометрия, задачи</p>
         </a>
 
         <!-- Русский язык -->
-        <a href="#" class="subject-card" onclick="alert('Переход к материалам по Русскому языку для 3 класса'); return false;">
+        <a href="../html/russian-1.html" class="subject-card">
           <div class="subject-card__icon">✍️</div>
           <h3 class="subject-card__title">Русский язык</h3>
-          <p class="subject-card__sub">Падежи, склонения, сложные слова</p>
+          <p class="subject-card__sub">Прописи, буквы, звуки, слоги</p>
         </a>
 
         <!-- Литература -->
-        <a href="#" class="subject-card" onclick="alert('Переход к материалам по Литературе для 3 класса'); return false;">
+        <a href="../html/lit-1.html" class="subject-card" >
           <div class="subject-card__icon">📖</div>
           <h3 class="subject-card__title">Литература</h3>
-          <p class="subject-card__sub">Выразительное чтение, анализ героев, стихи</p>
+          <p class="subject-card__sub">Чтение по слогам, сказки, рассказы</p>
         </a>
 
         <!-- Окружающий мир -->
-        <a href="#" class="subject-card" onclick="alert('Переход к материалам по Окружающему миру для 3 класса'); return false;">
+        <a href="../html/okr-1.html" class="subject-card">
           <div class="subject-card__icon">🌍</div>
           <h3 class="subject-card__title">Окружающий мир</h3>
-          <p class="subject-card__sub">Экосистемы, полезные ископаемые, тело человека</p>
-        </a>
-
-        <!-- ИЗО (Добавленная карточка) -->
-        <a href="#" class="subject-card" onclick="alert('Переход к материалам по ИЗО для 3 класса'); return false;">
-          <div class="subject-card__icon">🎨</div>
-          <h3 class="subject-card__title">ИЗО</h3>
-          <p class="subject-card__sub">Живопись, графика, народные промыслы</p>
+          <p class="subject-card__sub">Природа, времена года, семья</p>
         </a>
 
         <!-- Другое -->
-        <a href="#" class="subject-card" onclick="alert('Переход к дополнительным материалам для 3 класса'); return false;">
-          <div class="subject-card__icon">🧩</div>
+        <a href="../html/ohter-1.html" class="subject-card" >
+          <div class="subject-card__icon">🎨</div>
           <h3 class="subject-card__title">Другое</h3>
-          <p class="subject-card__sub">Технология, музыка, проектная деятельность</p>
+          <p class="subject-card__sub">ИЗО, технология, физкультура</p>
         </a>
 
       </div>
