@@ -27,7 +27,27 @@
     </nav>
 
     <!-- Правая часть: Пустой блок для симметрии -->
-    <div class="header__spacer"></div>
+        <!-- Правая часть: Иконки корзины и профиля -->
+    <div class="header__actions">
+      <a href="#" class="header__icon" title="Корзина">
+        <!-- Иконка корзины (SVG) -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="header__icon-badge">3</span> <!-- Цифра 3 - это количество товаров -->
+      </a>
+      
+      <a href="downloads.html" class="header__icon" title="Профиль">
+        <!-- Иконка профиля (SVG) -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span class="header__icon-badge">1</span> <!-- Уведомление -->
+      </a>
+    </div>
 
   </div>
 </header>
@@ -68,21 +88,21 @@
         </a>
 
         <!-- Литература -->
-        <a href="#" class="subject-card" >
+        <a href="../html/lit-1.html" class="subject-card" >
           <div class="subject-card__icon">📖</div>
           <h3 class="subject-card__title">Литература</h3>
           <p class="subject-card__sub">Чтение по слогам, сказки, рассказы</p>
         </a>
 
         <!-- Окружающий мир -->
-        <a href="#" class="subject-card">
+        <a href="../html/okr-1.html" class="subject-card">
           <div class="subject-card__icon">🌍</div>
           <h3 class="subject-card__title">Окружающий мир</h3>
           <p class="subject-card__sub">Природа, времена года, семья</p>
         </a>
 
         <!-- Другое -->
-        <a href="#" class="subject-card" >
+        <a href="../html/other-1.html" class="subject-card" >
           <div class="subject-card__icon">🎨</div>
           <h3 class="subject-card__title">Другое</h3>
           <p class="subject-card__sub">ИЗО, технология, физкультура</p>

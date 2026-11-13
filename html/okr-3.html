@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Окружающий мир 3 класс — Копилка идей</title>
+<link rel="stylesheet" href="../css/first.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header__container">
+    
+    <!-- Левая часть: Логотип и название -->
+    <a href="#" class="header__logo">
+      <img src="../images/photo_3_2026-11-12_16-34-55.jpg" alt="Копилка идей для педагогов" class="header__logo-img">
+      <span class="header__logo-text">Копилка идей</span>
+    </a>
+
+    <!-- Центральная часть: Навигация -->
+    <nav class="header__nav">
+      <a href="#" class="header__link">Главная</a>
+      <a href="#" class="header__link">О нас</a>
+      <a href="#contacts" class="header__link">Контакты</a>
+      <a href="#" class="header__link">Скачанное</a>
+    </nav>
+
+    <!-- Правая часть: Пустой блок для симметрии -->
+        <!-- Правая часть: Иконки корзины и профиля -->
+    <div class="header__actions">
+      <a href="#" class="header__icon" title="Корзина">
+        <!-- Иконка корзины (SVG) -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="header__icon-badge">3</span> <!-- Цифра 3 - это количество товаров -->
+      </a>
+      
+      <a href="downloads.html" class="header__icon" title="Профиль">
+        <!-- Иконка профиля (SVG) -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span class="header__icon-badge">1</span> <!-- Уведомление -->
+      </a>
+    </div>
+
+  </div>
+</header>
+
+<main>
+  <section class="hero hero--class">
+    <div class="container">
+      <p style="color: var(--color-gray); margin-bottom: 10px; font-size: 0.95rem;">
+        <a href="class-3.html" style="color: var(--color-primary);">3 класс</a> / Окружающий мир
+      </p>
+      <h1 class="hero__title">Окружающий мир</h1>
+      <p class="hero__text">Времена года, природа, семья и первые открытия об окружающем мире.</p>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="container catalog__container">
+      
+      <aside class="catalog__filters">
+        <h3 style="margin-bottom: 15px; font-size: 1.2rem;">Тип материала</h3>
+        <ul class="filter-list">
+          <li><label><input type="checkbox" class="filter-type" value="worksheet" checked> Рабочие листы</label></li>
+          <li><label><input type="checkbox" class="filter-type" value="presentation" checked> Презентации</label></li>
+          <li><label><input type="checkbox" class="filter-type" value="test" checked> Тесты</label></li>
+          <li><label><input type="checkbox" class="filter-type" value="cards" checked> Карточки</label></li>
+        </ul>
+        <h3 style="margin-top: 30px; margin-bottom: 15px; font-size: 1.2rem;">Формат файла</h3>
+        <ul class="filter-list">
+          <li><label><input type="checkbox" class="filter-format" value="pdf" checked> PDF</label></li>
+          <li><label><input type="checkbox" class="filter-format" value="docx" checked> DOCX</label></li>
+          <li><label><input type="checkbox" class="filter-format" value="pptx" checked> PPTX</label></li>
+        </ul>
+      </aside>
+
+      <div class="catalog__products" id="products-container">
+        
+        <div class="product-card" data-type="presentation" data-format="pptx">
+          <div class="product-card__img">🌍</div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Презентация: Времена года</h4>
+            <p class="product-card__format">PPTX • 18 слайдов</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">220 ₽</span>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-type="worksheet" data-format="pdf">
+          <div class="product-card__img">🍂</div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Рабочий лист: Осень в лесу</h4>
+            <p class="product-card__format">PDF • 3 страницы</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">130 ₽</span>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" id="contacts">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h3 class="footer__title">Копилка идей</h3>
+        <p class="footer__text">Помогаем учителям начальной школы готовиться к урокам быстро и качественно.</p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <p class="footer__text">📧 Email: <a href="gontstatyana@internet.ru">gontstatyana@internet.ru</a></p>
+        <p class="footer__text">📞 Телефон: <a href="tel:+78001234567">+7 (978) 266-08-12</a></p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Мы в соцсетях</h3>
+        <div class="socials">
+          <!-- Оставлен только ВК и добавлен MAX -->
+          <a class="socials__link" href="https://vk.ru/club229749227" target="_blank" title="ВКонтакте">ВК</a>
+          <a class="socials__link" href="https://max.ru/kopilka_pedagogam" target="_blank" title="MAX">MAX</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">© 2025 Копилка идей для педагогов. Все права защищены.</div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const typeCheckboxes = document.querySelectorAll('.filter-type');
+    const formatCheckboxes = document.querySelectorAll('.filter-format');
+    const products = document.querySelectorAll('.product-card');
+
+    function filterProducts() {
+      const activeTypes = Array.from(typeCheckboxes).filter(cb => cb.checked).map(cb => cb.value);
+      const activeFormats = Array.from(formatCheckboxes).filter(cb => cb.checked).map(cb => cb.value);
+      products.forEach(product => {
+        const isTypeMatch = activeTypes.includes(product.getAttribute('data-type'));
+        const isFormatMatch = activeFormats.includes(product.getAttribute('data-format'));
+        product.style.display = (isTypeMatch && isFormatMatch) ? 'flex' : 'none';
+      });
+    }
+    typeCheckboxes.forEach(cb => cb.addEventListener('change', filterProducts));
+    formatCheckboxes.forEach(cb => cb.addEventListener('change', filterProducts));
+  });
+</script>
+</body>
+</html>
